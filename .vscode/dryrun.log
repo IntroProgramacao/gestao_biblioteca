@@ -1,5 +1,5 @@
 make --dry-run --keep-going --print-directory
 make: Entering directory '/home/lucasilboot/Documentos/Repositorios/gestao_biblioteca'
-gcc -ggdb -std=c99 -Wall -Werror -Wformat=0 -o gestao gestao.c
+make: Nothing to be done for 'all'.
 make: Leaving directory '/home/lucasilboot/Documentos/Repositorios/gestao_biblioteca'
  
