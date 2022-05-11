@@ -26,10 +26,10 @@ Criar o sistema de gestão de Biblioteca com as características a seguir:
 
 Autor: Lucasitron
 ****************************************************************************************************/
+#include <stdbool.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include <cs50.h>
 
 //estrutura com os dados do livro.
 struct livro{
@@ -69,23 +69,23 @@ void remover(Livro *li){
 int
 main(int argc, char const *argv[]){
     /*Cria um vetor de livros com 100 posições onde cada posição indica um livro da biblioteca*/
-    Livro **livro = (livro **) malloc (100 * sizeof Livro);
+    //Livro **livro = (Livro **)malloc(100 * sizeof (Livro*));
     
     //inicializa todos as posições do vetor com NULL
-    memset(livro, NULL, 100);
+    //memcpy(livro, NULL, 100);
 
     //menu de execução, printf
     bool stop = false;
     do
     {
         printf("Digite o valor da opção e de enter.\n");
-        printf("1 - Cadastrar livro\t");
-        printf("5 - devolver livro livro\n");
-        printf("2 - remover livro\t");
+        printf("1 - Cadastrar livro\t\t");
+        printf("2 - remover livro\n");
+        printf("3 - consultar livros\t\t");
+        printf("4 - emprestar livro\n");
+        printf("5 - devolver livro livro\t");
         printf("6 - listar livros emprestados\n");
-        printf("3 - consultar livros\t");
-        printf("7 - listar livros disponíveis\n");
-        printf("4 - emprestar livro\t");
+        printf("7 - listar livros disponíveis\t");
         printf("8 - listar livros cadastrados\n");
     } while (stop == false);
     

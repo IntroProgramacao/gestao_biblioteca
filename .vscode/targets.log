@@ -1,6 +1,4 @@
 make all --print-data-base --no-builtin-variables --no-builtin-rules --question
-make: *** No rule to make target 'gestao', needed by 'all'.  Stop.
-
 # GNU Make 4.3
 # Built for x86_64-unknown-linux-gnu
 # Copyright (C) 1988-2020 Free Software Foundation, Inc.
@@ -8,7 +6,7 @@ make: *** No rule to make target 'gestao', needed by 'all'.  Stop.
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Tue May 10 21:46:52 2022
+# Make data base, printed on Tue May 10 21:59:41 2022
 
 # Variables
 
@@ -278,6 +276,7 @@ HOME = /home/lucasilboot
 ELECTRON_RUN_AS_NODE = 1
 # environment
 DRAWHOME = /usr/share/opencascade/resources/DrawResources
+ 
 # environment
 VSCODE_IPC_HOOK = /run/user/1000/vscode-880dfe95-1.67.0-main.sock
 # default
@@ -307,7 +306,7 @@ GDMSESSION = gnome
 # environment
 LC_IDENTIFICATION = pt_BR.UTF-8
 # variable set hash-table stats:
-# Load=147/1024=14%, Rehash=0, Collisions=20/175=11%
+# Load=147/1024=14%, Rehash=0, Collisions=20/178=11%
 
 # Pattern-specific Variable Values
 
@@ -315,9 +314,9 @@ LC_IDENTIFICATION = pt_BR.UTF-8
 
 # Directories
 
-# . (device 2050, inode 15867899): 8 files, no impossibilities.
+# . (device 2050, inode 15867899): 9 files, no impossibilities.
 
-# 8 files, no impossibilities in 1 directories.
+# 9 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -328,15 +327,43 @@ LC_IDENTIFICATION = pt_BR.UTF-8
 # Not a target:
 Makefile:
 #  Implicit rule search has been done.
-#  Last modified 2022-05-10 21:45:53.210070435
+#  Last modified 2022-05-10 21:59:35.843411486
 #  File has been updated.
 #  Successfully updated.
 
 # Not a target:
-gestao:
+gestao.c:
 #  Implicit rule search has been done.
-#  File does not exist.
-#  File has not been updated.
+#  Last modified 2022-05-10 21:59:29.386744761
+#  File has been updated.
+#  Successfully updated.
+
+gestao: gestao.c
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: ''
+#  Last modified 2022-05-10 21:59:06.52674454
+#  File has been updated.
+#  Needs to be updated (-q is set).
+# automatic
+# @ := gestao
+# automatic
+# * := 
+# automatic
+# < := gestao.c
+# automatic
+# + := gestao.c
+# automatic
+# % := 
+# automatic
+# ^ := gestao.c
+# automatic
+# ? := gestao.c
+# automatic
+# | := 
+# variable set hash-table stats:
+# Load=8/32=25%, Rehash=0, Collisions=1/11=9%
+#  recipe to execute (from 'Makefile', line 3):
+	gcc -ggdb -std=c99 -Wall -Werror -Wformat=0 -o gestao gestao.c
 
 # Not a target:
 .DEFAULT:
@@ -346,15 +373,21 @@ gestao:
 
 all: gestao
 #  Command line target.
-#  Implicit rule search has not been done.
+#  Implicit rule search has been done.
 #  File does not exist.
+#  File has been updated.
+#  Needs to be updated (-q is set).
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/3=0%
+
+# Not a target:
+.SUFFIXES:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 2):
-	gestao: gestao.c
-		gcc -ggdb -std=c99 -Wall -Werror -Wformat=0 -o gestao gestao.c
 
 # files hash-table stats:
-# Load=5/1024=0%, Rehash=0, Collisions=0/17=0%
+# Load=6/1024=1%, Rehash=0, Collisions=0/21=0%
 # VPATH Search Paths
 
 # No 'vpath' search paths.
@@ -364,10 +397,9 @@ all: gestao
 # strcache buffers: 1 (0) / strings = 13 / storage = 97 B / avg = 7 B
 # current buf: size = 8162 B / used = 97 B / count = 13 / avg = 7 B
 
-# strcache performance: lookups = 19 / hit rate = 31%
- 
+# strcache performance: lookups = 24 / hit rate = 45%
 # hash-table stats:
-# Load=13/8192=0%, Rehash=0, Collisions=0/19=0%
-# Finished Make data base on Tue May 10 21:46:52 2022
+# Load=13/8192=0%, Rehash=0, Collisions=0/24=0%
+# Finished Make data base on Tue May 10 21:59:41 2022
 
  
