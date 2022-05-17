@@ -6,7 +6,7 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Wed May 11 09:31:34 2022
+# Make data base, printed on Tue May 17 09:11:24 2022
 
 # Variables
 
@@ -23,7 +23,7 @@ GJS_DEBUG_OUTPUT = stderr
 # environment
 CSF_EXCEPTION_PROMPT = 1
 # environment
-VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-26d3561e-2cdb-43e4-833f-80d4cb023178.sock
+VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-a5653900-10ab-4bab-87e4-b64c2f6efb71.sock
 # environment
 SBX_CHROME_API_RQ = 1
 # environment
@@ -143,7 +143,7 @@ SANDBOX_LD_PRELOAD = /app/bin/../lib/libzypak-preload-host.so:/app/bin/../lib/li
 # environment
 DRAWDEFAULT = /usr/share/opencascade/resources/DrawResources/DrawDefault
 # environment
-SESSION_MANAGER = local/lucasitron:@/tmp/.ICE-unix/2640,unix/lucasitron:/tmp/.ICE-unix/2640
+SESSION_MANAGER = local/lucasitron:@/tmp/.ICE-unix/1715,unix/lucasitron:/tmp/.ICE-unix/1715
 # automatic
 *F = $(notdir $*)
 # environment
@@ -197,7 +197,7 @@ LC_TIME = pt_BR.UTF-8
 # environment
 XDG_CONFIG_HOME = /home/lucasilboot/.var/app/com.visualstudio.code/config
 # environment
-INVOCATION_ID = a68ed5c4196f49a4b2778f8922c1e0fc
+INVOCATION_ID = 2f8a46c4dda5453cb66b51e12ff8de6b
 # environment
 VSCODE_LOG_NATIVE = false
 # environment
@@ -235,7 +235,7 @@ GIO_LAUNCHED_DESKTOP_FILE = /var/lib/flatpak/exports/share/applications/com.visu
 # makefile
 .DEFAULT_GOAL := all
 # environment
-SYSTEMD_EXEC_PID = 2656
+SYSTEMD_EXEC_PID = 1731
 # environment
 CSF_TObjMessage = /usr/share/opencascade/resources/TObj
 # environment
@@ -247,11 +247,11 @@ DISPLAY = :99.0
 # default
 MAKE_VERSION := 4.3
 # environment
-MANAGERPID = 2229
+MANAGERPID = 1634
 # environment
 LC_MEASUREMENT = pt_BR.UTF-8
 # environment
-GIO_LAUNCHED_DESKTOP_FILE_PID = 6992
+GIO_LAUNCHED_DESKTOP_FILE_PID = 15546
 # environment
 _ = /usr/bin/make
 # environment
@@ -265,7 +265,7 @@ CSF_DrawPluginDefaults = /usr/share/opencascade/resources/DrawResources
 # environment
 CSF_IGESDefaults = /usr/share/opencascade/resources/XSTEPResource
 # environment
-JOURNAL_STREAM = 8:25958
+JOURNAL_STREAM = 8:24965
 # environment
 XDG_SESSION_CLASS = user
 # environment
@@ -293,9 +293,9 @@ ELECTRON_NO_ATTACH_CONSOLE = 1
 # environment
 CSF_StandardDefaults = /usr/share/opencascade/resources/StdResource
 # default
+ 
 .FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell nocomment grouped-target extra-prereqs archives jobserver output-sync check-symlink load
 # environment
- 
 FLATPAK_ID = com.visualstudio.code
 # environment
 XDG_MENU_PREFIX = gnome-
@@ -306,7 +306,7 @@ GDMSESSION = gnome
 # environment
 LC_IDENTIFICATION = pt_BR.UTF-8
 # variable set hash-table stats:
-# Load=147/1024=14%, Rehash=0, Collisions=20/175=11%
+# Load=147/1024=14%, Rehash=0, Collisions=20/178=11%
 
 # Pattern-specific Variable Values
 
@@ -314,9 +314,9 @@ LC_IDENTIFICATION = pt_BR.UTF-8
 
 # Directories
 
-# . (device 2050, inode 15867899): 11 files, no impossibilities.
+# . (device 2050, inode 15867899): 16 files, no impossibilities.
 
-# 11 files, no impossibilities in 1 directories.
+# 16 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -325,27 +325,67 @@ LC_IDENTIFICATION = pt_BR.UTF-8
 # Files
 
 # Not a target:
+estrutura.h:
+#  Implicit rule search has been done.
+#  Last modified 2022-05-17 02:24:36.724053293
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+search.h:
+#  Implicit rule search has been done.
+#  Last modified 2022-05-17 01:11:53.540685229
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
 Makefile:
 #  Implicit rule search has been done.
-#  Last modified 2022-05-11 09:31:33.062448282
+#  Last modified 2022-05-17 01:25:35.137358428
 #  File has been updated.
 #  Successfully updated.
 
 # Not a target:
 gestao.c:
 #  Implicit rule search has been done.
-#  Last modified 2022-05-11 09:21:34.865766064
+#  Last modified 2022-05-17 01:51:26.330704037
 #  File has been updated.
 #  Successfully updated.
 
-gestao: gestao.c
+gestao: gestao.c estrutura.c estrutura.h biblioteca.c biblioteca.h search.c search.h
 #  Implicit rule search has not been done.
-#  Last modified 2022-05-11 09:21:35.462432746
+#  Implicit/static pattern stem: ''
+#  File does not exist.
+#  File has been updated.
+#  Needs to be updated (-q is set).
+# automatic
+# @ := gestao
+# automatic
+# * := 
+# automatic
+# < := gestao.c
+# automatic
+# + := gestao.c estrutura.c estrutura.h biblioteca.c biblioteca.h search.c search.h
+# automatic
+# % := 
+# automatic
+# ^ := gestao.c estrutura.c estrutura.h biblioteca.c biblioteca.h search.c search.h
+# automatic
+# ? := gestao.c estrutura.c estrutura.h biblioteca.c biblioteca.h search.c search.h
+# automatic
+# | := 
+# variable set hash-table stats:
+# Load=8/32=25%, Rehash=0, Collisions=1/11=9%
+#  recipe to execute (from 'Makefile', line 3):
+	gcc -ggdb -std=c99 -Wall -Werror -Wformat=0 -o gestao gestao.c estrutura.c biblioteca.c search.c -lcs50 -lm
+	
+
+# Not a target:
+biblioteca.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-05-17 01:55:50.86737282
 #  File has been updated.
 #  Successfully updated.
-#  recipe to execute (from 'Makefile', line 3):
-	gcc -ggdb -std=c99 -Wall -Werror -Wformat=0 -o gestao gestao.c
-	
 
 # Not a target:
 .DEFAULT:
@@ -358,22 +398,51 @@ all: gestao
 #  Implicit rule search has been done.
 #  File does not exist.
 #  File has been updated.
+#  Needs to be updated (-q is set).
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/3=0%
+
+# Not a target:
+estrutura.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-05-17 02:24:28.964053233
+#  File has been updated.
 #  Successfully updated.
 
+# Not a target:
+search.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-05-17 01:11:23.744018328
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+biblioteca.h:
+#  Implicit rule search has been done.
+#  Last modified 2022-05-17 01:58:26.797374052
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+.SUFFIXES:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
 # files hash-table stats:
-# Load=6/1024=1%, Rehash=0, Collisions=0/20=0%
+# Load=12/1024=1%, Rehash=0, Collisions=0/33=0%
 # VPATH Search Paths
 
 # No 'vpath' search paths.
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 15 / storage = 123 B / avg = 8 B
-# current buf: size = 8162 B / used = 123 B / count = 15 / avg = 8 B
+# strcache buffers: 1 (0) / strings = 21 / storage = 191 B / avg = 9 B
+# current buf: size = 8162 B / used = 191 B / count = 21 / avg = 9 B
 
-# strcache performance: lookups = 25 / hit rate = 40%
+# strcache performance: lookups = 37 / hit rate = 43%
 # hash-table stats:
-# Load=15/8192=0%, Rehash=0, Collisions=0/25=0%
-# Finished Make data base on Wed May 11 09:31:34 2022
+# Load=21/8192=0%, Rehash=0, Collisions=0/37=0%
+# Finished Make data base on Tue May 17 09:11:24 2022
 
  
