@@ -16,10 +16,10 @@ main(int argc, char *argv[])
     while (1)
     {
         //user interface
-        printf("1 - Cadastrar novo livro. \t");     printf("2 - Remover um livro.\n");
-        printf("3 - Consultar um livro. \t\t");     printf("4 - Listar livros.\n");
-        printf("5 - Emprestar um livro. \t\t");     printf("6 - Devolver um livro.\n");
-        printf("7 - listar emprestimos. \t");       printf("0 - Sair.\n");
+        printf("1 - Cadastrar novo livro. \t");   printf("2 - Remover um livro.\n");
+        printf("3 - Consultar um livro. \t");     printf("4 - Listar livros.\n");
+        printf("5 - Emprestar um livro. \t");     printf("6 - Devolver um livro.\n");
+        printf("7 - listar emprestimos. \t");      printf("0 - Sair.\n");
 
         //input
         int option = get_int("Digite a opção desejada: \n");
@@ -36,6 +36,8 @@ main(int argc, char *argv[])
             index = "null";
             release(book, index);
 
+        case 3:
+        
         default:
             break;
         }

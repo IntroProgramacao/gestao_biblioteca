@@ -9,40 +9,36 @@
 //add to book
 void add(Book **book){
 
-    char *tittle = (char *)malloc(50*sizeof(char));
-    tittle = get_string("Digite o titulo: \n");
-
-    char *autor = (char *)malloc(50*sizeof(char));
-    autor = get_string("Digite o autor: \n");
-
-    char *isbn = (char *)malloc(50*sizeof(char));
-    isbn = get_string("Digite o isbn: \n");
-
+    /*data array
+    **data[0] = tittle
+    **data[1] = author
+    **data[2] = ISBN
+    **data[3] = publishing
+    */
+    char **data = (char **)malloc(4*sizeof(char *));
+    data[0] = get_string("Digite o titulo: \n");
+    data[1] = get_string("Digite o autor: \n");
+    data[2] = get_string("Digite o isbn: \n");
     int edic = get_int("De o ano da edicao: zn");
-
-    char *editora = (char *)malloc(50*sizeof(char));
-    editora = get_string("Digite a editora: \n");
+    data[3] = get_string("Digite a editora: \n");
 
     //add to struct
-    bool free = false;
+    bool fre = false;
     for (int i = 0; i < 100; i++)
     {
         if(book[i] == NULL && i<100){
-            book[i] = newBook(tittle, autor, isbn, edic, editora);;
-            free = true;
+            book[i] = newBook(data[0], data[1], data[2], edic, data[4]);;
+            fre = true;
             break;
         }
     }
-    if (!free)
+    if (!fre)
     {
         printf("Biblioteca cheia!\n");
     }
     
     //release
-    free(tittle);
-    free(autor);
-    free(isbn);
-    free(editora);
+    free(data);
 }
 
 //remove a book
@@ -59,7 +55,7 @@ void release(Book **unit, char *index){
         
     }
     
-    //create a new book type
+    //memory release
     freeBook (unit[ind]);
     unit[ind] = NULL;
 }
